@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex; /*agar posisi container tetap berada di tengah walaupun ukuran layar berubah*/
+    justify-content: center; 
+    background: linear-gradient(120deg, #4d79ff, #1affd1); /*mengubah warna background menjadi warna gradasi dengan sudut 120 derajat*/
+    height: 100vh; /*agar tinggi backgroundnya menyesuaikan viewport browser*/
+    font-family: montserrat;
+}
+
+.container {
+    text-align: center;
+    margin: 9em; /*agar margin memiliki ukuran 9x dari default*/
+    background-color: azure;
+    width: 400px;
+    height: auto; /*agar heightnya menyesuaikan parentnya*/
+    border-radius: 15px;
+    padding: 5px;
+    position: absolute; /*agar posisi item2 didalamnya tidak berubah posisi saat window browser berubah ukuran*/
+}
+
+.topimg img {
+    width: 60px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+h1 {
+    border-bottom: 2px solid #b3b3b3;
+    padding: 0 0 20px 0;
+    margin-top: 0;
+}
+
+form {
+    text-align: center; /*agar teks di dalam tag form berada di tengah*/
+    align-items: center; /*agar item2 di dalam tag form berada di tengah*/
+}
+
+.text img {
+    width: 17px;
+}
+
+input {
+    font-size: 1.2em; /*agar font memiliki ukuran 1,2x lebih besar dari default(16px) atau parentnya(jika ada)*/
+    border-bottom: 3px solid #66c2ff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background: none;
+    width: 345px;
+}   
+
+.text {
+    margin: 10px 10px 0 0px ;
+}
+
+.pass {
+    margin: 30px 10px 5px 30px;
+    transform: translate(-27%, -50%); /*agar posisi dari div class pass berada 27% ke arah kiri pada X 
+    axis dan berada 50% ke arah atas pada Y axis*/
+}
+
+.pass a {
+    text-decoration: none; /*menghilangkan garis bawah pada link*/
+    color: black;
+}
+
+.login {
+    margin: 10px 20px 25px 20px;
+}
+
+input[type="submit"] {
+    font-size: 1.4em;
+    color: azure;
+    padding: 5px;
+    background-color: #66c2ff;
+    width: 80%; /*agar lebar menjadi 80% berdasarkan parentnya*/
+    border-radius: 25px;
+    border: 1px solid;
+}
+
+input[type="submit"]:hover {
+    border-color:  #66c2ff;
+    cursor: pointer;
+}
+
+.signup {
+    transform: translate(-11%, -35%);
+}
+
+.signup a {
+    color: #66c2ff;
+    margin: 10px;
+    float: right;
+    transform: translate(20%, -50%);
+    text-decoration: none;
+}
+
+.signup a:hover {
+    text-shadow: 0 0 2px #66c2ff;
+}
+
+.nama {
+    margin: 20px 0;
+    border-top: 2px solid #b3b3b3;
+    font-size: .7em;
+    padding-bottom: 0;
+}
+
+.nama:hover {
+    transition: .5s;/*menambah durasi delay munculnya text-shadow menjadi 0,5 detik*/
+    text-shadow: 
+    1px 1px 1px #66c2ff,
+    2px 2px 1px #66c2ff;
+}
